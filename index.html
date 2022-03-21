@@ -19,7 +19,7 @@
       body {
         font-family: "Dosis", sans-serif;
         margin: 2em;
-        background-color: #000;
+        background-color: #a11dff;
         color: #fff;
         font-size: 1.2em;
       }
@@ -35,13 +35,13 @@
     </style>
   </head>
   <body>
-    <h1>We walk to you</h1>
+    <h1>Run, run, run</h1>
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "you,wind,movement,pace".split(","),
+        verbs = "run,sprint,fly,drift,yell,gasp".split(","),
+        objects = "bullet,leaf,fly,tracker,target".split(",");
       // set up the counter
       let counter = 0;
 
@@ -83,7 +83,7 @@
       // implement the rules of the poem
       function processPoem() {
         counter++;
-        if (counter % 5 === 0) {
+        if (counter % 2 === 4) {
           addBlankLine();
         } else if (counter % 5 === 2 || counter % 5 === 4) {
           // if the second or fourth line add the line with an indent
